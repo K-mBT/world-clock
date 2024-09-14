@@ -1,26 +1,24 @@
 function updateTime() {
-  // Los Angeles
-  let losAngelesElement = document.querySelector("#los-angeles");
-  if (losAngelesElement) {
-    let losAngelesDateElement = losAngelesElement.querySelector(".date");
-    let losAngelesTimeElement = losAngelesElement.querySelector(".time");
-    let losAngelesTime = moment().tz("America/Los_Angeles");
+  let amsterdamElement = document.querySelector("#Amsterdam");
+  if (amsterdamElement) {
+    let amsterdamDateElement = amsterdamElement.querySelector(".date");
+    let amsterdamTimeElement = amsterdamElement.querySelector(".time");
+    let amsterdamTime = moment().tz("Europe/Amsterdam");
 
-    losAngelesDateElement.innerHTML = losAngelesTime.format("MMMM	Do YYYY");
-    losAngelesTimeElement.innerHTML = losAngelesTime.format(
+    amsterdamDateElement.innerHTML = amsterdamTime.format("MMMM	Do YYYY");
+    amsterdamTimeElement.innerHTML = amsterdamTime.format(
       "h:mm:ss [<small>]A[</small>]"
     );
   }
 
-  // Paris
-  let parisElement = document.querySelector("#paris");
-  if (parisElement) {
-    let parisDateElement = parisElement.querySelector(".date");
-    let parisTimeElement = parisElement.querySelector(".time");
-    let parisTime = moment().tz("Europe/Paris");
+  let darwinElement = document.querySelector("#Darwin");
+  if (darwinElement) {
+    let darwinDateElement = darwinElement.querySelector(".date");
+    let darwinTimeElement = darwinElement.querySelector(".time");
+    let darwinTime = moment().tz("Australia/Darwin");
 
-    parisDateElement.innerHTML = parisTime.format("MMMM	Do YYYY");
-    parisTimeElement.innerHTML = parisTime.format(
+    darwinDateElement.innerHTML = darwinTime.format("MMMM	Do YYYY");
+    darwinTimeElement.innerHTML = darwinTime.format(
       "h:mm:ss [<small>]A[</small>]"
     );
   }
