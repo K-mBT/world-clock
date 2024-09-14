@@ -5,7 +5,7 @@ function updateTime() {
     let amsterdamTimeElement = amsterdamElement.querySelector(".time");
     let amsterdamTime = moment().tz("Europe/Amsterdam");
 
-    amsterdamDateElement.innerHTML = amsterdamTime.format("MMMM	Do YYYY");
+    amsterdamDateElement.innerHTML = amsterdamTime.format("MMMM Do YYYY");
     amsterdamTimeElement.innerHTML = amsterdamTime.format(
       "h:mm:ss [<small>]A[</small>]"
     );
@@ -17,7 +17,7 @@ function updateTime() {
     let darwinTimeElement = darwinElement.querySelector(".time");
     let darwinTime = moment().tz("Australia/Darwin");
 
-    darwinDateElement.innerHTML = darwinTime.format("MMMM	Do YYYY");
+    darwinDateElement.innerHTML = darwinTime.format("MMMM Do YYYY");
     darwinTimeElement.innerHTML = darwinTime.format(
       "h:mm:ss [<small>]A[</small>]"
     );
